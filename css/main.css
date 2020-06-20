@@ -5,7 +5,8 @@ body {
 }
 
 a {
-    color: #52b6ec;
+    color: #000;
+    font-weight: 600;
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -o-transition: 300ms;
@@ -18,8 +19,6 @@ a {
     border: 0;
 } */
 
-
-/* 
 .btn.btn-primary {
     background-color: #52b6ec;
 }
@@ -31,19 +30,18 @@ a {
     -moz-box-shadow: none;
     box-shadow: none;
 }
-*/
 
 a:hover,
 a:focus {
-    color: #80c9f1;
+    color: #ffbd29;
     text-decoration: none;
     outline: none;
 }
 
 #header {
     position: fixed;
-    /* top: 0;
-    left: 0; */
+    top: 0;
+    left: 0;
     width: 100%;
     height: 80px;
     z-index: 99999;
@@ -55,7 +53,7 @@ a:focus {
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    padding: 150px 0;
     color: #000000;
 }
 
@@ -141,15 +139,33 @@ a:focus {
     font-size: 42px;
 }
 
+.box p {
+    font-size: 18px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
 .bell {
-    width: 70px;
-    position: relative;
-    bottom: 12px;
+    background-image: url(/images/megaphone.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    padding-right: 1.1em;
 }
 
 .group_logo {
-    width: 100px;
+    width: 150px;
     border-radius: 50%;
+    margin: 20px 0;
+}
+
+.box li {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.box li span {
+    font-weight: 500;
 }
 
 #contact .box {
@@ -157,13 +173,11 @@ a:focus {
     color: #999;
 }
 
-
-/* 
 #contact .box h1,
 #contact .box h2,
 #contact .box h3 {
     color: #fff;
-} */
+}
 
 #contact .box a {
     color: #999;
@@ -194,7 +208,7 @@ a:focus {
 }
 
 .box {
-    padding: 50px 30px;
+    padding: 78px 30px;
     background: #fff;
     border-bottom: 1px solid #e9e9e9;
     position: relative;
@@ -216,6 +230,7 @@ a:focus {
     position: relative;
     margin-bottom: 30px;
     /* font-size: 48px; */
+    line-height: 1.5em;
 }
 
 #portfolio .box {
@@ -599,13 +614,13 @@ img.sreen {
     height: 78px;
     background: url(../images/logo.png) no-repeat 0 50%;
     background-size: 78px 78px;
+    border-radius: 50%;
 }
 
-.navbar-nav {
+
+/* .navbar-nav {
     float: none;
-    display: flex;
-    justify-content: center;
-}
+} */
 
 .navbar-default .navbar-nav>li {
     margin-left: 1px;
@@ -785,5 +800,17 @@ textarea#message {
     100% {
         opacity: 1;
         -o-transform: scale(1);
+    }
+}
+
+
+/* ---------------------------------------------- */
+
+@media screen and (max-width: 767px) {
+    .box {
+        padding: 78px 0;
+    }
+    .box h2 {
+        font-size: 24px;
     }
 }
