@@ -118,7 +118,8 @@ input {
 }
 
 .btn-danger:hover {
-    background-color: #1abc9c;
+    background-color: #000000;
+    color: #fff;
 }
 
 .navbar-default .navbar-toggle {
@@ -296,6 +297,8 @@ ul.social {
     list-style: none;
     margin: 10px 0 0;
     padding: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 ul.social>li {
@@ -304,7 +307,7 @@ ul.social>li {
 
 ul.social>li>a {
     display: block;
-    font-size: 18px;
+    font-size: 32px;
 }
 
 ul.social>li>a i {
@@ -314,6 +317,20 @@ ul.social>li>a i {
 textarea#message {
     padding: 10px 15px;
     height: 220px;
+}
+
+.pre_form {
+    margin-bottom: 50px;
+}
+
+.social a {
+    color: #000;
+    font-size: 24px;
+}
+
+.last h1 {
+    font-size: 50px;
+    font-weight: 800;
 }
 
 
@@ -369,5 +386,9 @@ textarea#message {
         position: static;
         left: 0;
         margin: 0;
+    }
+    /* ---------------------------- */
+    .mt-50 {
+        margin-top: 50px;
     }
 }
