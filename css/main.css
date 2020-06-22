@@ -170,8 +170,10 @@ input {
     margin-left: -302px;
 }
 
-img.sreen {
+img.screen {
     border: 1px solid #000;
+    width: 100%;
+    max-width: 400px;
 }
 
 .navbar-default .navbar-nav>li {
@@ -390,5 +392,16 @@ textarea#message {
     /* ---------------------------- */
     .mt-50 {
         margin-top: 50px;
+    }
+    #accordionYY .accorion_body ul {
+        padding: 0;
+    }
+    #accordionYY .accorion_body li {
+        margin-top: 30px;
+        display: block;
+    }
+    img.screen {
+        width: 100%;
+        margin: 0;
     }
 }
