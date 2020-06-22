@@ -1,21 +1,13 @@
 <?php
-	header('Content-type: application/json');
-	$status = array(
-		'type'=>'success',
-		'message'=>'Email sent!'
-	);
+$recepient = "matvienkoigor956@gmail.com";
+$sitename = "Work & Jobs";
 
-    $name = @trim(stripslashes($_POST['name'])); 
-    $email = @trim(stripslashes($_POST['email'])); 
-    $subject = @trim(stripslashes($_POST['subject'])); 
-    $message = @trim(stripslashes($_POST['message'])); 
+$name = trim($_POST["name"]);
+$email = trim($_POST["email"]);
+$text = trim($_POST["text"]);
+$message = "Имя: $name \nEmail: $email \nТекст: $text";
 
-    $email_from = $email;
-    $email_to = 'email@gmail.com';
+$pagetitle = "Сообщение с сайта: \"$sitename\"";
+mail($recepient, $pagetitle, $message, "Content-type: text/plain; charset=\"utf-8\"\n From: $recepient");
 
-    $body = 'Name: ' . $name . "\n\n" . 'Email: ' . $email . "\n\n" . 'Subject: ' . $subject . "\n\n" . 'Message: ' . $message;
-
-    $success = @mail($email_to, $subject, $body, 'From: <'.$email_from.'>');
-
-    echo json_encode($status);
-    die; 
+?>

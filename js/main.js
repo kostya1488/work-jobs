@@ -55,3 +55,17 @@ jQuery(function($) {
         });
     });
 });
+
+// ----------------------------------------------------------
+function ajaxFormRequest(form_id, url) {
+    $("#" + form_id).submit(function() {
+        $.ajax({
+            type: "POST",
+            url: url,
+            data: $(this).serialize()
+        }).done(function() {
+            alert("Спасибо, ваше сообщение отправлено!");
+        });
+        return false;
+    })
+}
