@@ -71,10 +71,12 @@ a:focus {
 
 .box h2 {
     font-size: 40px;
+    font-weight: 600;
 }
 
 .box h3 {
     font-size: 24px;
+    line-height: 1.7;
 }
 
 .box li {
@@ -213,11 +215,65 @@ img.screen {
     text-align: center;
     list-style: none;
     padding: 0;
-    margin: 100px 0;
 }
 
 .price_zakrep {
     margin: 20px 0 10px;
+}
+
+.price_set {
+    margin: 100px 0;
+}
+
+.price_set h3 {
+    margin: 20px 0;
+}
+
+.price_set ul {
+    display: flex;
+    justify-content: center;
+}
+
+.price_set li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0px 0px 21px -8px rgba(0, 0, 0, 0.75);
+    text-align: center;
+    width: 250px;
+    height: 300px;
+}
+
+.price_head {
+    background-color: #ffbd29;
+}
+
+.price_head_black {
+    background-color: #000;
+    color: #fff;
+}
+
+.price_head_black h3 {
+    font-weight: 600;
+}
+
+.price_head h3 {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.price_body {
+    padding: 20px;
+}
+
+.set_cost {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.price_set li:not(:last-child) {
+    margin-right: 30px;
 }
 
 
@@ -225,10 +281,6 @@ img.screen {
 
 .collapsed i {
     transform: rotate(180deg);
-}
-
-.card {
-    margin-left: -40px;
 }
 
 .accorion_head {
@@ -297,7 +349,6 @@ img.screen {
 
 ul.social {
     list-style: none;
-    margin: 10px 0 0;
     padding: 0;
     display: flex;
     justify-content: space-around;
@@ -335,6 +386,24 @@ textarea#message {
     font-weight: 800;
 }
 
+.box ol {
+    padding: 20px;
+}
+
+#contact .box {
+    padding: 30px;
+}
+
+.foot_label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.foot_label h1 {
+    margin: 0;
+}
+
 
 /* ---------------------------------------------- */
 
@@ -354,6 +423,9 @@ textarea#message {
     .box {
         padding: 78px 8px;
     }
+    #contact .box {
+        padding: 40px 8px;
+    }
     .box h2 {
         font-size: 30px;
     }
@@ -367,20 +439,14 @@ textarea#message {
     .box li {
         font-size: 16px;
     }
-    .box ol {
-        padding-left: 20px;
-    }
     /* --------------------------- */
     #headingYY1 {
         display: none;
     }
-    .card {
+    /* .card {
         margin-left: -20px;
-    }
+    } */
     /* --------------------------- */
-    .price ul {
-        margin: 50px 0;
-    }
     .navbar-collapse {
         padding: 0;
     }
@@ -403,5 +469,21 @@ textarea#message {
     img.screen {
         width: 100%;
         margin: 0;
+    }
+    .price_set ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .price_set li:not(:last-child) {
+        margin-right: 0;
+    }
+    .price_set li {
+        margin: 10px 0;
+    }
+    .accordion p {
+        margin: 20px 0;
+    }
+    .foot_label h1 {
+        margin: 20px 0;
     }
 }
