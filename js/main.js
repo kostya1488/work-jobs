@@ -64,7 +64,7 @@ function ajaxFormRequest(form_id, url) {
             url: url,
             data: $(this).serialize()
         }).done(function() {
-            alert("Спасибо, ваше сообщение отправлено!");
+            alert("Спасибо! Ваше сообщение успешно отправлено.");
         });
         return false;
     })

@@ -408,7 +408,7 @@ textarea#message {
 /* ---------------------------------------------- */
 
 @media screen and (max-width: 768px) {
-    .pc_versin {
+    .pc_version {
         display: none;
     }
     .mobile_versin {
