@@ -476,14 +476,16 @@ textarea#message {
         margin: 0;
     }
     .price_set ul {
-        flex-direction: column;
-        align-items: center;
+        justify-content: space-evenly;
     }
     .price_set li:not(:last-child) {
         margin-right: 0;
     }
     .price_set li {
         margin: 10px 0;
+        width: auto;
+        height: auto;
+        min-width: 94px;
     }
     .accordion p {
         margin: 20px 0;
@@ -493,5 +495,18 @@ textarea#message {
     }
     .price_set {
         margin: 50px 0;
+    }
+    .price_body {
+        padding: 8px;
+    }
+    .price_body p {
+        font-size: 13px;
+    }
+    .price_head_black h3,
+    .price_head h3 {
+        font-size: 14px;
+    }
+    .set_cost {
+        font-size: 20px;
     }
 }
