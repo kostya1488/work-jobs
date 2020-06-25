@@ -205,7 +205,7 @@
                         <p>Уважайте друг друга, пишите по делу и исключительно на тему работы.</p>
                     </li>
                 </ol>
-                <h3 class="center mt-50"><b>Запрещено:</b></h3>
+                <h3 class="center "><b>Запрещено:</b></h3>
                 <ol>
                     <li>Размещение информации, которая не касается тематики группы.</li>
                     <li>Спам, маты, оскорбление участников группы, хамское и неадекватное поведение, реклама и размещение ссылок других групп, сайтов, электронных почт, имён пользователей Телеграмма, ботов и каналов, размещение объявлений, касающихся регистрации
@@ -236,32 +236,32 @@
                     <ul>
                         <li>
                             <div class="price_head">
-                                <h3>Standart set</h3>
+                                <h3>Econom</h3>
                             </div>
                             <div class="price_body">
                                 <p>1 пост</p>
-                                <div class="set_cost">300 ₴</div>
-                                <p>24 часа</p>
+                                <div class="set_cost">300 грн</div>
+                                <p>день</p>
                             </div>
                         </li>
                         <li>
                             <div class="price_head">
-                                <h3>Double set</h3>
+                                <h3>Standart</h3>
                             </div>
                             <div class="price_body">
                                 <p>2 поста</p>
-                                <div class="set_cost">400 ₴</div>
-                                <p>24 часа</p>
+                                <div class="set_cost">400 грн</div>
+                                <p>день</p>
                             </div>
                         </li>
                         <li>
                             <div class="price_head">
-                                <h3>Special set</h3>
+                                <h3>Business</h3>
                             </div>
                             <div class="price_body">
                                 <p>3 поста</p>
-                                <div class="set_cost">450 ₴</div>
-                                <p>24 часа</p>
+                                <div class="set_cost">450 грн</div>
+                                <p>день</p>
                             </div>
                         </li>
                     </ul>
@@ -274,9 +274,9 @@
                                 <h3>FIXED</h3>
                             </div>
                             <div class="price_body">
-                                <p>Закреп до трёх дней</p>
-                                <div class="set_cost">700 ₴</div>
-                                <p>24 часа</p>
+                                <p>Закреп</p>
+                                <div class="set_cost">700 грн</div>
+                                <p>день</p>
                             </div>
                         </li>
                         <li>
@@ -284,16 +284,19 @@
                                 <h3>FIXED pro</h3>
                             </div>
                             <div class="price_body">
-                                <p>Закреп от трёх дней</p>
-                                <div class="set_cost">600 ₴</div>
-                                <p>24 часа</p>
+                                <p>От 3-ех дней</p>
+                                <div class="set_cost">600 грн</div>
+                                <p>день</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <p>Все вопросы по сотрудничеству обсуждаются только с администратором <a href="https://t.me/kiev_rabota_admin">@kiev_rabota_admin</a>.</p>
-                <p>Чтобы Вас не забанили, внимательно читайте <a href="#rules_of_group">правила</a>.</p>
-                <h3 class="center mt-50">Спасибо за понимание! Удачи в поиске!</h3>
+                <div class="center">
+                    <p>Все вопросы по сотрудничеству обсуждаются только с администратором <a href="https://t.me/kiev_rabota_admin">@kiev_rabota_admin</a>.</p>
+                    <p>Чтобы Вас не забанили, внимательно читайте <a href="#rules_of_group">правила</a>.</p>
+                    <h3 class="mt-50">Спасибо за понимание! Удачи в поиске!</h3>
+
+                </div>
             </div>
     </section>
 
@@ -302,11 +305,15 @@
             <div class="box last">
                 <div class="row">
                     <div class="center pre_form">
-                        <h2>ОРАТНАЯ СВЯЗЬ:</h2>
+                        <h2>ОБРАТНАЯ СВЯЗЬ:</h2>
                         <h3>Если у Вас остались вопросы или вы хотите заказать рекламу, заполните форму.</h3>
                     </div>
-                    <div class="col-sm-6">
-                        <div class="status alert alert-success" style="display: none"></div>
+                    <div id="form_area" class="col-sm-6 center">
+
+                        <div id="area_after_form_send">
+                            <h3>Спасибо! <br> Ваше сообщение успешно отправлено.</h3>
+                        </div>
+
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
                             <div class="row">
                                 <div class="col-sm-6">

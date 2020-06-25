@@ -58,13 +58,15 @@ jQuery(function($) {
 
 // ----------------------------------------------------------
 function ajaxFormRequest(form_id, url) {
-    $("#" + form_id).submit(function() {
+    var forma = $("#" + form_id);
+    forma.submit(function() {
         $.ajax({
             type: "POST",
             url: url,
             data: $(this).serialize()
         }).done(function() {
-            alert("Спасибо! Ваше сообщение успешно отправлено.");
+            forma.hide()
+            $('#area_after_form_send').css('display', 'flex')
         });
         return false;
     })
