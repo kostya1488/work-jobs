@@ -482,10 +482,11 @@ textarea#message {
         margin-right: 0;
     }
     .price_set li {
-        margin: 10px 0;
+        margin: 10px;
         width: auto;
         height: auto;
         min-width: 94px;
+        max-width: 150px;
     }
     .accordion p {
         margin: 20px 0;
