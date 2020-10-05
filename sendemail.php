@@ -1,5 +1,5 @@
 <?php
-$recepient = "viktorioptt@gmail.com";
+$recepient = "mail@ukrjob.org";
 $sitename = "Work & Jobs";
 $token = "1153545691:AAFG1V4rzA8b5sccN2F3mCYOcO8yfBN8nbU"; 
 $chat_id = "-1001370283762";
